@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --yellow: rgb(252, 198, 21)
+}
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+.bg{
+    background-image: url('image/bg1.jpeg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-1{
+    background-color: rgba(0,0,0,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tittle{
+    padding: 130px 0;
+    font-family:  'Times New Roman', Times, serif;
+    color: white;
+}
+#we1{
+    position: relative;
+    left: 470px;
+    top: -30px;
+}
+#we2{
+    position: relative;
+    top: -30px;
+    left: 369px;
+}
+#we3{
+    position: relative;
+    top: -30px;
+    left: 264px;
+}
+ button{
+    background-color: var(--yellow);
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 4px 15px ;
+    margin-top: 15px;
+    border: 1px solid var(--yellow);
+}
+li,.f1 p,.team p,.port p,.anime p{
+    font-size: 11px !important;
+}
+a:hover{
+    background-color: var(--yellow);
+    color: black !important;
+    transition: all;
+    transition-duration: 2s;
+}
+button:hover{
+    background-color: chartreuse;
+}
+.about{
+    font-size: 11px;
+}
+.design{
+    width: 100%;
+    height: 8px;
+    background-color: darkgray;
+}
+.per-1,.per-2,.per-3{
+    height: 8px;
+    background-color: var(--yellow);
+}
+.per-1{
+    width: 95%;
+}
+.per-2{
+    width: 75%;
+}
+.per-3{
+    width: 55%;
+}
+.sub{
+    background-color: var(--yellow);
+}
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sub input{
+    background-color: rgb(233, 208, 127);
+    font-size: 11px;
+}
+.mail{
+    padding: 4px 100px;
+}
+.sub button{
+    font-size: 12px;
+}
+.power{
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 180px;
+    width: 100%;
+}
+.tobirama,.shikamaru,.obito,.sasuke,.lee,.kakashi,.shisui,.pain{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.anime .row{
+    padding: 0 !important;
+}
+.tobirama{
+    background-image: url('image/tobirama.jpeg');
+    width: 260px;
+}
+.shikamaru{
+    background-image: url('image/shikamaru.jpeg');
+    width: 260px;
+}
+.obito{
+    background-image: url('image/obito1.jpeg');
+    width: 260px;
+}
+.sasuke{
+    background-image: url('image/sasuke.jpeg');
+    width: 260px;
+}
+.lee{
+    background-image: url('image/lee1.jpeg');
+    width: 260px;
+}
+.kakashi{
+    background-image: url('image/kakashi.jpeg');
+    width: 260px;
+}
+.shisui{
+    background-image: url('image/shisui.jpeg');
+    width: 260px;
+}
+.pain{
+    background-image: url('image/pain.jpeg');
+    width: 260px;
+}
+.row>*{
+    padding: 0 !important;
+}
+.anime p,h6{
+    margin: 0 !important;
+    padding-left: 9px;
+    padding-top: 6px;   
+}
+.data{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 400px;
+}
+.data input{
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+textarea{
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+.details{
+    background-image: url('image/bg2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.black{
+    background-image: url('image/black.png');
+    background-position: center;
+    background-size: cover;
+    width: 260px;
+}
+.container{
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+.img,.img1,.img2,.img3{
+    border-radius: 50%;
+    border: 5px solid var(--yellow);
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    margin-left: 49px;
+}
+.img{
+    background-image: url('image/naruto.jpeg');
+}
+.img1{
+    background-image: url('image/itachi.jpeg');
+}
+.img2{
+    background-image: url('image/minato.jpeg');
+}
+.img3{
+    background-image: url('image/jiraya.jpeg');
+}
+.span{
+    color: white;
+    background-color: brown;
+    padding: 0px 10px;
+}
+.row #icon{
+    background-color: var(--yellow);
+    padding: 4px 19px;
+    margin-bottom: 30px;
+}
+@media (max-width:1100px){
+    #we1 img,#we2 img,#we3 img{
+        display:none !important;
+    }
+}
+@media (max-width:973px){
+    .img,.img1,.img2,.img3{
+        margin-left: 80px !important;
+    }
+    .img2,.img3{
+        margin-top: 20px;
+    }
+}
+@media (max-width:768px){
+    .img,.img1,.img2,.img3{
+        margin-left: 130px !important;
+        margin-top: 20px !important;
+    }
+    .tobirama,.shikamaru,.obito,.kakashi,.lee,.black,.pain,.sasuke,.shisui{
+        width: 100%;
+    }
+}
+@media (max-width:753px){
+    .mail{
+        padding: 4px 69px;
+    }
+}
+@media (max-width:412px){
+    .img,.img1,.img2,.img3{
+        margin-left: 70px !important;
+    }
+}
+@media (max-width:409px){
+    .mail{
+        padding: 4px 15px !important;
+    }
+}
